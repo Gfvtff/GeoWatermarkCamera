@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		200000000000000000000001 /* GeoWatermarkCameraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000001 /* GeoWatermarkCameraApp.swift */; };
+		200000000000000000000002 /* PreviewGeometryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000002 /* PreviewGeometryMapper.swift */; };
+		200000000000000000000003 /* WatermarkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000003 /* WatermarkConfiguration.swift */; };
+		200000000000000000000004 /* WatermarkSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000004 /* WatermarkSnapshot.swift */; };
+		200000000000000000000005 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000005 /* CameraService.swift */; };
+		200000000000000000000006 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000006 /* LocationService.swift */; };
+		200000000000000000000007 /* PhotoProcessingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000007 /* PhotoProcessingService.swift */; };
+		200000000000000000000008 /* WatermarkSettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000008 /* WatermarkSettingsStore.swift */; };
+		200000000000000000000009 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000009 /* CameraPreview.swift */; };
+		20000000000000000000000A /* CameraScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000A /* CameraScreen.swift */; };
+		20000000000000000000000B /* WatermarkEditorSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000B /* WatermarkEditorSheet.swift */; };
+		20000000000000000000000C /* WatermarkPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000C /* WatermarkPreview.swift */; };
+		20000000000000000000000D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000D /* Assets.xcassets */; };
+		20000000000000000000000E /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000000F /* PrivacyInfo.xcprivacy */; };
+		20000000000000000000000F /* GeoWatermarkCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000010 /* GeoWatermarkCameraTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		700000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A00000000000000000000001;
+			remoteInfo = GeoWatermarkCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		100000000000000000000001 /* GeoWatermarkCameraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoWatermarkCameraApp.swift; sourceTree = "<group>"; };
+		100000000000000000000002 /* PreviewGeometryMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewGeometryMapper.swift; sourceTree = "<group>"; };
+		100000000000000000000003 /* WatermarkConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatermarkConfiguration.swift; sourceTree = "<group>"; };
+		100000000000000000000004 /* WatermarkSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatermarkSnapshot.swift; sourceTree = "<group>"; };
+		100000000000000000000005 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		100000000000000000000006 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		100000000000000000000007 /* PhotoProcessingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoProcessingService.swift; sourceTree = "<group>"; };
+		100000000000000000000008 /* WatermarkSettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatermarkSettingsStore.swift; sourceTree = "<group>"; };
+		100000000000000000000009 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		10000000000000000000000A /* CameraScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraScreen.swift; sourceTree = "<group>"; };
+		10000000000000000000000B /* WatermarkEditorSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatermarkEditorSheet.swift; sourceTree = "<group>"; };
+		10000000000000000000000C /* WatermarkPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatermarkPreview.swift; sourceTree = "<group>"; };
+		10000000000000000000000D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10000000000000000000000E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10000000000000000000000F /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		100000000000000000000010 /* GeoWatermarkCameraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoWatermarkCameraTests.swift; sourceTree = "<group>"; };
+		100000000000000000000011 /* GeoWatermarkCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoWatermarkCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		100000000000000000000012 /* GeoWatermarkCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoWatermarkCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		100000000000000000000013 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		100000000000000000000014 /* PROJECT_STRUCTURE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PROJECT_STRUCTURE.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		300000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300000000000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				400000000000000000000001 /* GeoWatermarkCamera */,
+				400000000000000000000007 /* GeoWatermarkCameraTests */,
+				100000000000000000000013 /* README.md */,
+				100000000000000000000014 /* PROJECT_STRUCTURE.md */,
+				000000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000011 /* GeoWatermarkCamera.app */,
+				100000000000000000000012 /* GeoWatermarkCameraTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		400000000000000000000001 /* GeoWatermarkCamera */ = {
+			isa = PBXGroup;
+			children = (
+				400000000000000000000002 /* App */,
+				400000000000000000000003 /* Models */,
+				400000000000000000000004 /* Services */,
+				400000000000000000000005 /* Views */,
+				400000000000000000000006 /* Resources */,
+			);
+			path = GeoWatermarkCamera;
+			sourceTree = "<group>";
+		};
+		400000000000000000000002 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000001 /* GeoWatermarkCameraApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		400000000000000000000003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000002 /* PreviewGeometryMapper.swift */,
+				100000000000000000000003 /* WatermarkConfiguration.swift */,
+				100000000000000000000004 /* WatermarkSnapshot.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		400000000000000000000004 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000005 /* CameraService.swift */,
+				100000000000000000000006 /* LocationService.swift */,
+				100000000000000000000007 /* PhotoProcessingService.swift */,
+				100000000000000000000008 /* WatermarkSettingsStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		400000000000000000000005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000009 /* CameraPreview.swift */,
+				10000000000000000000000A /* CameraScreen.swift */,
+				10000000000000000000000B /* WatermarkEditorSheet.swift */,
+				10000000000000000000000C /* WatermarkPreview.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		400000000000000000000006 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				10000000000000000000000D /* Assets.xcassets */,
+				10000000000000000000000E /* Info.plist */,
+				10000000000000000000000F /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		400000000000000000000007 /* GeoWatermarkCameraTests */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000010 /* GeoWatermarkCameraTests.swift */,
+			);
+			path = GeoWatermarkCameraTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000001 /* GeoWatermarkCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 600000000000000000000002 /* Build configuration list for PBXNativeTarget "GeoWatermarkCamera" */;
+			buildPhases = (
+				300000000000000000000003 /* Sources */,
+				300000000000000000000001 /* Frameworks */,
+				300000000000000000000005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoWatermarkCamera;
+			productName = GeoWatermarkCamera;
+			productReference = 100000000000000000000011 /* GeoWatermarkCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A00000000000000000000002 /* GeoWatermarkCameraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 600000000000000000000003 /* Build configuration list for PBXNativeTarget "GeoWatermarkCameraTests" */;
+			buildPhases = (
+				300000000000000000000004 /* Sources */,
+				300000000000000000000002 /* Frameworks */,
+				300000000000000000000006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				700000000000000000000002 /* PBXTargetDependency */,
+			);
+			name = GeoWatermarkCameraTests;
+			productName = GeoWatermarkCameraTests;
+			productReference = 100000000000000000000012 /* GeoWatermarkCameraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A00000000000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					A00000000000000000000002 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = A00000000000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = 600000000000000000000001 /* Build configuration list for PBXProject "GeoWatermarkCamera" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = zh-Hans;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				"zh-Hans",
+				en,
+			);
+			mainGroup = 000000000000000000000002;
+			productRefGroup = 000000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000000000000000000001 /* GeoWatermarkCamera */,
+				A00000000000000000000002 /* GeoWatermarkCameraTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		300000000000000000000005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20000000000000000000000D /* Assets.xcassets in Resources */,
+				20000000000000000000000E /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300000000000000000000006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		300000000000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				200000000000000000000001 /* GeoWatermarkCameraApp.swift in Sources */,
+				200000000000000000000002 /* PreviewGeometryMapper.swift in Sources */,
+				200000000000000000000003 /* WatermarkConfiguration.swift in Sources */,
+				200000000000000000000004 /* WatermarkSnapshot.swift in Sources */,
+				200000000000000000000005 /* CameraService.swift in Sources */,
+				200000000000000000000006 /* LocationService.swift in Sources */,
+				200000000000000000000007 /* PhotoProcessingService.swift in Sources */,
+				200000000000000000000008 /* WatermarkSettingsStore.swift in Sources */,
+				200000000000000000000009 /* CameraPreview.swift in Sources */,
+				20000000000000000000000A /* CameraScreen.swift in Sources */,
+				20000000000000000000000B /* WatermarkEditorSheet.swift in Sources */,
+				20000000000000000000000C /* WatermarkPreview.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300000000000000000000004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20000000000000000000000F /* GeoWatermarkCameraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		700000000000000000000002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A00000000000000000000001 /* GeoWatermarkCamera */;
+			targetProxy = 700000000000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		500000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		500000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		500000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GeoWatermarkCamera/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appleair.geowatermarkcamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		500000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GeoWatermarkCamera/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appleair.geowatermarkcamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		500000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appleair.geowatermarkcameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoWatermarkCamera.app/GeoWatermarkCamera";
+			};
+			name = Debug;
+		};
+		500000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appleair.geowatermarkcameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoWatermarkCamera.app/GeoWatermarkCamera";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		600000000000000000000001 /* Build configuration list for PBXProject "GeoWatermarkCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				500000000000000000000001 /* Debug */,
+				500000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		600000000000000000000002 /* Build configuration list for PBXNativeTarget "GeoWatermarkCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				500000000000000000000003 /* Debug */,
+				500000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		600000000000000000000003 /* Build configuration list for PBXNativeTarget "GeoWatermarkCameraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				500000000000000000000005 /* Debug */,
+				500000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}

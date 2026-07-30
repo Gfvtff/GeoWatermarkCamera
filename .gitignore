@@ -1,0 +1,29 @@
+# Xcode build products and caches
+build/
+DerivedData/
+.derivedData-*/
+*.xcresult
+
+# Per-user Xcode state
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Packages/
+Package.resolved
+
+# macOS
+.DS_Store
+
+# Signing and local secrets
+*.p12
+*.cer
+*.mobileprovision
+*.provisionprofile
+.env
+.env.*
+!.env.example
