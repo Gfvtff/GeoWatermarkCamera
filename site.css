@@ -44,6 +44,10 @@ li { margin-block: .4rem; }
 .document-meta { font-size: .95rem; color: var(--muted); margin-bottom: 1.5rem; }
 .document-meta p { margin-bottom: .25rem; }
 .document-section { scroll-margin-top: 1rem; }
+.provider-reference { padding: 1rem; margin-block: .6rem; border: 1px solid var(--line); border-radius: .5rem; background: #fff; }
+.provider-reference summary { cursor: pointer; font-weight: 650; }
+.provider-reference[open] summary { margin-bottom: .8rem; }
+.provider-reference p:last-child { margin-bottom: 0; }
 .site-footer { padding-block: 1.5rem 2rem; border-top: 1px solid var(--line); font-size: .875rem; }
 .site-footer p { margin-bottom: .6rem; }
 .site-footer a { color: inherit; }
